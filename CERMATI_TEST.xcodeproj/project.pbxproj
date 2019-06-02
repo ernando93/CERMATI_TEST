@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4205239D2007993F145965CC /* Pods_CERMATI_TESTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343E21161B2A43EAB22B711C /* Pods_CERMATI_TESTTests.framework */; };
+		64DF388B4FD4C7620E0920AC /* Pods_CERMATI_TESTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71648E24107BE7CB90455B4 /* Pods_CERMATI_TESTUITests.framework */; };
 		9E405DB122A3FFF300DD4864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DB022A3FFF300DD4864 /* AppDelegate.swift */; };
 		9E405DB322A3FFF300DD4864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DB222A3FFF300DD4864 /* ViewController.swift */; };
 		9E405DB622A3FFF300DD4864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E405DB422A3FFF300DD4864 /* Main.storyboard */; };
@@ -15,6 +17,13 @@
 		9E405DBE22A3FFF500DD4864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E405DBC22A3FFF500DD4864 /* LaunchScreen.storyboard */; };
 		9E405DC922A3FFF500DD4864 /* CERMATI_TESTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DC822A3FFF500DD4864 /* CERMATI_TESTTests.swift */; };
 		9E405DD422A3FFF500DD4864 /* CERMATI_TESTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DD322A3FFF500DD4864 /* CERMATI_TESTUITests.swift */; };
+		9E405DEC22A4032A00DD4864 /* SingleDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DE522A4032A00DD4864 /* SingleDataResponse.swift */; };
+		9E405DED22A4032A00DD4864 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DE622A4032A00DD4864 /* Response.swift */; };
+		9E405DEE22A4032A00DD4864 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DE722A4032A00DD4864 /* Request.swift */; };
+		9E405DFD22A404F500DD4864 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DFC22A404F500DD4864 /* User.swift */; };
+		9E405E0322A40C2100DD4864 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405E0222A40C2100DD4864 /* Results.swift */; };
+		9E405E0922A4122200DD4864 /* RequestUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405E0822A4122200DD4864 /* RequestUsers.swift */; };
+		F2D588CA07B01B3067640137 /* Pods_CERMATI_TEST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947659A1B80C9A7C8806FCEE /* Pods_CERMATI_TEST.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07BE47C6395473C3E78F3B31 /* Pods-CERMATI_TESTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CERMATI_TESTUITests.release.xcconfig"; path = "Target Support Files/Pods-CERMATI_TESTUITests/Pods-CERMATI_TESTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		26EA1C197E0A9A2A58C7DC4E /* Pods-CERMATI_TESTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CERMATI_TESTTests.release.xcconfig"; path = "Target Support Files/Pods-CERMATI_TESTTests/Pods-CERMATI_TESTTests.release.xcconfig"; sourceTree = "<group>"; };
+		343E21161B2A43EAB22B711C /* Pods_CERMATI_TESTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CERMATI_TESTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36175689F0F4B1E31A39A349 /* Pods-CERMATI_TEST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CERMATI_TEST.release.xcconfig"; path = "Target Support Files/Pods-CERMATI_TEST/Pods-CERMATI_TEST.release.xcconfig"; sourceTree = "<group>"; };
+		635B691C12B3141113CF5E27 /* Pods-CERMATI_TEST.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CERMATI_TEST.debug.xcconfig"; path = "Target Support Files/Pods-CERMATI_TEST/Pods-CERMATI_TEST.debug.xcconfig"; sourceTree = "<group>"; };
+		8F8DA41394C45AA9AFBDBABB /* Pods-CERMATI_TESTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CERMATI_TESTUITests.debug.xcconfig"; path = "Target Support Files/Pods-CERMATI_TESTUITests/Pods-CERMATI_TESTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		947659A1B80C9A7C8806FCEE /* Pods_CERMATI_TEST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CERMATI_TEST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E405DAD22A3FFF300DD4864 /* CERMATI_TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CERMATI_TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E405DB022A3FFF300DD4864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E405DB222A3FFF300DD4864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +65,14 @@
 		9E405DCF22A3FFF500DD4864 /* CERMATI_TESTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CERMATI_TESTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E405DD322A3FFF500DD4864 /* CERMATI_TESTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CERMATI_TESTUITests.swift; sourceTree = "<group>"; };
 		9E405DD522A3FFF500DD4864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E405DE522A4032A00DD4864 /* SingleDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDataResponse.swift; sourceTree = "<group>"; };
+		9E405DE622A4032A00DD4864 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		9E405DE722A4032A00DD4864 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9E405DFC22A404F500DD4864 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9E405E0222A40C2100DD4864 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		9E405E0822A4122200DD4864 /* RequestUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUsers.swift; sourceTree = "<group>"; };
+		C71648E24107BE7CB90455B4 /* Pods_CERMATI_TESTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CERMATI_TESTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E792FC937A2DCA1CDC06B459 /* Pods-CERMATI_TESTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CERMATI_TESTTests.debug.xcconfig"; path = "Target Support Files/Pods-CERMATI_TESTTests/Pods-CERMATI_TESTTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D588CA07B01B3067640137 /* Pods_CERMATI_TEST.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4205239D2007993F145965CC /* Pods_CERMATI_TESTTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64DF388B4FD4C7620E0920AC /* Pods_CERMATI_TESTUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		506B5880FA423ACF8AF177D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				947659A1B80C9A7C8806FCEE /* Pods_CERMATI_TEST.framework */,
+				343E21161B2A43EAB22B711C /* Pods_CERMATI_TESTTests.framework */,
+				C71648E24107BE7CB90455B4 /* Pods_CERMATI_TESTUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E405DA422A3FFF300DD4864 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +120,8 @@
 				9E405DC722A3FFF500DD4864 /* CERMATI_TESTTests */,
 				9E405DD222A3FFF500DD4864 /* CERMATI_TESTUITests */,
 				9E405DAE22A3FFF300DD4864 /* Products */,
+				A0FB42A8782ABC50BFDCFD38 /* Pods */,
+				506B5880FA423ACF8AF177D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +138,10 @@
 		9E405DAF22A3FFF300DD4864 /* CERMATI_TEST */ = {
 			isa = PBXGroup;
 			children = (
+				9E405DE322A4032A00DD4864 /* Network Abstraction */,
+				9E405DE222A402C300DD4864 /* Controller */,
+				9E405DE122A402BC00DD4864 /* Model */,
 				9E405DB022A3FFF300DD4864 /* AppDelegate.swift */,
-				9E405DB222A3FFF300DD4864 /* ViewController.swift */,
 				9E405DB422A3FFF300DD4864 /* Main.storyboard */,
 				9E405DBA22A3FFF500DD4864 /* Assets.xcassets */,
 				9E405DBC22A3FFF500DD4864 /* LaunchScreen.storyboard */,
@@ -128,6 +169,63 @@
 			path = CERMATI_TESTUITests;
 			sourceTree = "<group>";
 		};
+		9E405DE122A402BC00DD4864 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E405DFC22A404F500DD4864 /* User.swift */,
+				9E405E0222A40C2100DD4864 /* Results.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E405DE222A402C300DD4864 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E405DB222A3FFF300DD4864 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9E405DE322A4032A00DD4864 /* Network Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				9E405DE422A4032A00DD4864 /* Response */,
+				9E405DE622A4032A00DD4864 /* Response.swift */,
+				9E405DE722A4032A00DD4864 /* Request.swift */,
+				9E405DE822A4032A00DD4864 /* Request */,
+			);
+			path = "Network Abstraction";
+			sourceTree = "<group>";
+		};
+		9E405DE422A4032A00DD4864 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				9E405DE522A4032A00DD4864 /* SingleDataResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		9E405DE822A4032A00DD4864 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9E405E0822A4122200DD4864 /* RequestUsers.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		A0FB42A8782ABC50BFDCFD38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				635B691C12B3141113CF5E27 /* Pods-CERMATI_TEST.debug.xcconfig */,
+				36175689F0F4B1E31A39A349 /* Pods-CERMATI_TEST.release.xcconfig */,
+				E792FC937A2DCA1CDC06B459 /* Pods-CERMATI_TESTTests.debug.xcconfig */,
+				26EA1C197E0A9A2A58C7DC4E /* Pods-CERMATI_TESTTests.release.xcconfig */,
+				8F8DA41394C45AA9AFBDBABB /* Pods-CERMATI_TESTUITests.debug.xcconfig */,
+				07BE47C6395473C3E78F3B31 /* Pods-CERMATI_TESTUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E405DD822A3FFF500DD4864 /* Build configuration list for PBXNativeTarget "CERMATI_TEST" */;
 			buildPhases = (
+				6E246A1BD8BB54CBC4FE537A /* [CP] Check Pods Manifest.lock */,
 				9E405DA922A3FFF300DD4864 /* Sources */,
 				9E405DAA22A3FFF300DD4864 /* Frameworks */,
 				9E405DAB22A3FFF300DD4864 /* Resources */,
+				B8018E65870472E25ABA47DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E405DDB22A3FFF500DD4864 /* Build configuration list for PBXNativeTarget "CERMATI_TESTTests" */;
 			buildPhases = (
+				6291AAC96AA558AAD7BD5611 /* [CP] Check Pods Manifest.lock */,
 				9E405DC022A3FFF500DD4864 /* Sources */,
 				9E405DC122A3FFF500DD4864 /* Frameworks */,
 				9E405DC222A3FFF500DD4864 /* Resources */,
@@ -170,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E405DDE22A3FFF500DD4864 /* Build configuration list for PBXNativeTarget "CERMATI_TESTUITests" */;
 			buildPhases = (
+				00DC48F97CFAC3483DA744B7 /* [CP] Check Pods Manifest.lock */,
 				9E405DCB22A3FFF500DD4864 /* Sources */,
 				9E405DCC22A3FFF500DD4864 /* Frameworks */,
 				9E405DCD22A3FFF500DD4864 /* Resources */,
@@ -254,14 +356,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00DC48F97CFAC3483DA744B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CERMATI_TESTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6291AAC96AA558AAD7BD5611 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CERMATI_TESTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E246A1BD8BB54CBC4FE537A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CERMATI_TEST-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8018E65870472E25ABA47DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CERMATI_TEST/Pods-CERMATI_TEST-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CERMATI_TEST/Pods-CERMATI_TEST-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E405DA922A3FFF300DD4864 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9E405DB922A3FFF300DD4864 /* CERMATI_TEST.xcdatamodeld in Sources */,
+				9E405DEE22A4032A00DD4864 /* Request.swift in Sources */,
 				9E405DB322A3FFF300DD4864 /* ViewController.swift in Sources */,
+				9E405E0922A4122200DD4864 /* RequestUsers.swift in Sources */,
+				9E405DEC22A4032A00DD4864 /* SingleDataResponse.swift in Sources */,
+				9E405DFD22A404F500DD4864 /* User.swift in Sources */,
+				9E405E0322A40C2100DD4864 /* Results.swift in Sources */,
 				9E405DB122A3FFF300DD4864 /* AppDelegate.swift in Sources */,
+				9E405DED22A4032A00DD4864 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +639,7 @@
 		};
 		9E405DD922A3FFF500DD4864 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635B691C12B3141113CF5E27 /* Pods-CERMATI_TEST.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +657,7 @@
 		};
 		9E405DDA22A3FFF500DD4864 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36175689F0F4B1E31A39A349 /* Pods-CERMATI_TEST.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +675,7 @@
 		};
 		9E405DDC22A3FFF500DD4864 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E792FC937A2DCA1CDC06B459 /* Pods-CERMATI_TESTTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +696,7 @@
 		};
 		9E405DDD22A3FFF500DD4864 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26EA1C197E0A9A2A58C7DC4E /* Pods-CERMATI_TESTTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +717,7 @@
 		};
 		9E405DDF22A3FFF500DD4864 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F8DA41394C45AA9AFBDBABB /* Pods-CERMATI_TESTUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +737,7 @@
 		};
 		9E405DE022A3FFF500DD4864 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07BE47C6395473C3E78F3B31 /* Pods-CERMATI_TESTUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
