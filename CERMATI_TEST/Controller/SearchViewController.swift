@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ESPullToRefresh
 
 class SearchViewController: UIViewController {
 
@@ -16,11 +17,15 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var viewSearch: UIView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    var refreshControl = UIRefreshControl()
+    
+    var totalUsers: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupContentView()
+        pullBottomTableView()
     }
 }
 
@@ -30,6 +35,7 @@ extension SearchViewController {
         viewSearch.layer.cornerRadius = 5.0
         setupTextField(textField: searchTextField, iconName: "searchIcon")
         setupTableView(withTableView: tableView)
+        setupRefreshControl(withRefreshControl: refreshControl)
     }
     
     func setupTextField(textField: UITextField, iconName: String) {
@@ -50,28 +56,55 @@ extension SearchViewController {
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
     }
+    
+    func setupRefreshControl(withRefreshControl refreshControl: UIRefreshControl) {
+        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.backgroundView = refreshControl
+        }
+    }
 }
 
-//MARK: - Request and Response API
+//MARK: - TextField Delegate
 extension SearchViewController: UITextFieldDelegate {
     @objc func textFieldDidChange(textField: UITextField) {
-        users.removeAll()
         if textField.text != "" {
             if textField.text!.count >= 3 {
-                Results.getUsers(withQ: textField.text!, andPerPage: 20) { result in
-                    switch result {
-                        
-                    case .success(let response):
-                        self.results = response
-                        self.users = response.items
-                        self.tableView.reloadData()
-                    case .failure(let failure):
-                        print(failure)
-                    }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    self.requestSearchUser(withQ: textField.text!, andPerPage: 20)
                 }
             }
         } else {
+            self.users.removeAll()
             self.tableView.reloadData()
+        }
+    }
+}
+
+//MARK: - Request and Response API
+extension SearchViewController {
+    func requestSearchUser(withQ q: String, andPerPage perPage: Int) {
+        Results.getUsers(withQ: q, andPerPage: perPage) { result in
+            switch result {
+                
+            case .success(let response):
+                self.results = response
+                self.totalUsers = response.totalCount!
+                self.users = response.items
+                self.refreshControl.endRefreshing()
+                self.tableView.es.stopLoadingMore()
+                self.tableView.reloadData()
+            case .failure(let failure):
+                print(failure)
+                self.refreshControl.endRefreshing()
+                self.tableView.es.stopLoadingMore()
+                self.tableView.es.noticeNoMoreData()
+                self.tableView.es.stopPullToRefresh()
+                self.tableView.reloadData()
+            }
         }
     }
 }
@@ -99,6 +132,33 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         } else {
             return SearchTableViewCell()
+        }
+    }
+}
+
+//MARK: - Action
+extension SearchViewController {
+    @objc func refresh(_ refreshControl: UIRefreshControl) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            
+            self.requestSearchUser(withQ: self.searchTextField.text!, andPerPage: 20)
+            self.tableView.es.resetNoMoreData()
+        }
+    }
+    
+    func pullBottomTableView() {
+        tableView.es.addInfiniteScrolling {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                
+                let perPage = self.users.count + 10
+                if self.users.count != self.totalUsers {
+                    self.requestSearchUser(withQ: self.searchTextField.text!, andPerPage: perPage)
+                } else {
+                    self.tableView.es.stopLoadingMore()
+                    self.tableView.es.noticeNoMoreData()
+                    self.tableView.es.stopPullToRefresh()
+                }
+            }
         }
     }
 }

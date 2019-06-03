@@ -16,13 +16,13 @@ final class Results: NSObject {
     
     init?(dictionary: [String: Any]) {
         
-        if let totalCount = dictionary[""] as? Int {
+        if let totalCount = dictionary["total_count"] as? Int {
             self.totalCount = totalCount
         } else {
             self.totalCount = 0
         }
         
-        if let incompleteResults = dictionary[""] as? Bool {
+        if let incompleteResults = dictionary["incomplete_results"] as? Bool {
             self.incompleteResults = incompleteResults
         } else {
             self.incompleteResults = false

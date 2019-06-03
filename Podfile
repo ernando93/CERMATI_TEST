@@ -16,6 +16,9 @@ target 'CERMATI_TEST' do
 
   #Load and cache image
   pod 'SDWebImage', '~> 4.0'
+  
+  #Pull To Refresh
+  pod 'ESPullToRefresh'
 
   target 'CERMATI_TESTTests' do
     inherit! :search_paths

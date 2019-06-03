@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0FCB405B236A2B977408B516CCD10720"
+               BlueprintIdentifier = "FDBFB6C3695BC76936B6992D3707A773"
                BuildableName = "Pods_CERMATI_TEST.framework"
                BlueprintName = "Pods-CERMATI_TEST"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0FCB405B236A2B977408B516CCD10720"
+            BlueprintIdentifier = "FDBFB6C3695BC76936B6992D3707A773"
             BuildableName = "Pods_CERMATI_TEST.framework"
             BlueprintName = "Pods-CERMATI_TEST"
             ReferencedContainer = "container:Pods.xcodeproj">
