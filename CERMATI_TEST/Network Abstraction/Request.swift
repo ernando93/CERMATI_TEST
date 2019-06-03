@@ -101,7 +101,9 @@ extension Request {
     
     func send(usingCompletionHandler completionHandler: @escaping (RequestResult<ResponseType>) -> Void) {
         
-        let dataRequest = Alamofire.request(fullURL, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+        let newURL = fullURL.absoluteString.removingPercentEncoding
+        
+        let dataRequest = Alamofire.request(newURL!, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
 
         dataRequest.responseJSON { response in
             switch response.result {

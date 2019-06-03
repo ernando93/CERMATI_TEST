@@ -26,7 +26,7 @@
                                         <rect key="frame" x="20" y="50" width="374" height="46"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Github users" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="unc-4S-yGG">
-                                                <rect key="frame" x="8" y="0.0" width="286" height="46"/>
+                                                <rect key="frame" x="8" y="0.0" width="358" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="HmY-Xw-6It"/>
                                                 </constraints>
@@ -34,27 +34,13 @@
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ls-v4-WJX">
-                                                <rect key="frame" x="302" y="8" width="65" height="30"/>
-                                                <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="65" id="8aU-Ad-uE9"/>
-                                                    <constraint firstAttribute="height" constant="30" id="DcI-xV-fEC"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
-                                                <state key="normal" title="Cancel">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="IIK-TN-xyH"/>
+                                            <constraint firstAttribute="trailing" secondItem="unc-4S-yGG" secondAttribute="trailing" constant="8" id="Mis-Pr-ypm"/>
                                             <constraint firstItem="unc-4S-yGG" firstAttribute="leading" secondItem="mnb-D6-SA8" secondAttribute="leading" constant="8" id="XYF-5B-AO4"/>
                                             <constraint firstItem="unc-4S-yGG" firstAttribute="centerY" secondItem="mnb-D6-SA8" secondAttribute="centerY" id="cn9-dp-9lV"/>
-                                            <constraint firstItem="8Ls-v4-WJX" firstAttribute="leading" secondItem="unc-4S-yGG" secondAttribute="trailing" constant="8" id="dAy-lx-ojD"/>
-                                            <constraint firstItem="8Ls-v4-WJX" firstAttribute="centerY" secondItem="unc-4S-yGG" secondAttribute="centerY" id="f7i-Ds-6RS"/>
-                                            <constraint firstAttribute="trailing" secondItem="8Ls-v4-WJX" secondAttribute="trailing" constant="7" id="xze-MY-Mw5"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6s-Ry-VPJ">

@@ -10,6 +10,9 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    var results: Results?
+    var users = [User]()
+    
     @IBOutlet weak var viewSearch: UIView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -36,6 +39,7 @@ extension SearchViewController {
         viewLeft.addSubview(imageViewLeft)
         textField.leftView = viewLeft
         textField.leftViewMode = .always
+        textField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
     }
     
     func setupTableView(withTableView tableView: UITableView) {
@@ -48,14 +52,49 @@ extension SearchViewController {
     }
 }
 
+//MARK: - Request and Response API
+extension SearchViewController: UITextFieldDelegate {
+    @objc func textFieldDidChange(textField: UITextField) {
+        users.removeAll()
+        if textField.text != "" {
+            if textField.text!.count >= 3 {
+                Results.getUsers(withQ: textField.text!, andPerPage: 20) { result in
+                    switch result {
+                        
+                    case .success(let response):
+                        self.results = response
+                        self.users = response.items
+                        self.tableView.reloadData()
+                    case .failure(let failure):
+                        print(failure)
+                    }
+                }
+            }
+        } else {
+            self.tableView.reloadData()
+        }
+    }
+}
+
 //MARK: - TableView Delegate and DataSource
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return users.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as? SearchTableViewCell {
+            
+            let data = users[indexPath.row]
+            cell.configureCell(withData: data)
             
             return cell
         } else {
