@@ -17,7 +17,7 @@ struct RequestUsers {
 
 extension RequestUsers: Request {
     var baseURL: URL {
-        return URL(fileURLWithPath: "https://api.github.com/")
+        return URL(fileURLWithPath: kAPIURL)
     }
     
     var path: String {

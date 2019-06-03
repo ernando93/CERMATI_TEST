@@ -25,6 +25,8 @@
 		9EE83E1122A53B2E0052B9FF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE83E1022A53B2E0052B9FF /* SearchViewController.swift */; };
 		9EE83E1622A540660052B9FF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE83E1422A540660052B9FF /* SearchTableViewCell.swift */; };
 		9EE83E1722A540660052B9FF /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EE83E1522A540660052B9FF /* SearchTableViewCell.xib */; };
+		9EE83E1B22A579200052B9FF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE83E1A22A579200052B9FF /* Constant.swift */; };
+		9EE83E1D22A5796F0052B9FF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE83E1C22A5796F0052B9FF /* Environment.swift */; };
 		F2D588CA07B01B3067640137 /* Pods_CERMATI_TEST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947659A1B80C9A7C8806FCEE /* Pods_CERMATI_TEST.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,9 @@
 		9EE83E1022A53B2E0052B9FF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9EE83E1422A540660052B9FF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		9EE83E1522A540660052B9FF /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		9EE83E1922A578700052B9FF /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		9EE83E1A22A579200052B9FF /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9EE83E1C22A5796F0052B9FF /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		C71648E24107BE7CB90455B4 /* Pods_CERMATI_TESTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CERMATI_TESTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E792FC937A2DCA1CDC06B459 /* Pods-CERMATI_TESTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CERMATI_TESTTests.debug.xcconfig"; path = "Target Support Files/Pods-CERMATI_TESTTests/Pods-CERMATI_TESTTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +147,7 @@
 		9E405DAF22A3FFF300DD4864 /* CERMATI_TEST */ = {
 			isa = PBXGroup;
 			children = (
+				9EE83E1822A578570052B9FF /* Setup */,
 				9EE83E1222A53B420052B9FF /* Storyboard */,
 				9E405DE322A4032A00DD4864 /* Network Abstraction */,
 				9E405DE222A402C300DD4864 /* Controller */,
@@ -233,6 +239,16 @@
 				9EE83E1522A540660052B9FF /* SearchTableViewCell.xib */,
 			);
 			path = "Search Cell";
+			sourceTree = "<group>";
+		};
+		9EE83E1822A578570052B9FF /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				9EE83E1922A578700052B9FF /* Config.xcconfig */,
+				9EE83E1A22A579200052B9FF /* Constant.swift */,
+				9EE83E1C22A5796F0052B9FF /* Environment.swift */,
+			);
+			path = Setup;
 			sourceTree = "<group>";
 		};
 		A0FB42A8782ABC50BFDCFD38 /* Pods */ = {
@@ -484,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EE83E1122A53B2E0052B9FF /* SearchViewController.swift in Sources */,
+				9EE83E1D22A5796F0052B9FF /* Environment.swift in Sources */,
 				9E405DB922A3FFF300DD4864 /* CERMATI_TEST.xcdatamodeld in Sources */,
 				9E405DEE22A4032A00DD4864 /* Request.swift in Sources */,
 				9E405E0922A4122200DD4864 /* RequestUsers.swift in Sources */,
@@ -491,6 +508,7 @@
 				9E405DFD22A404F500DD4864 /* User.swift in Sources */,
 				9E405E0322A40C2100DD4864 /* Results.swift in Sources */,
 				9E405DB122A3FFF300DD4864 /* AppDelegate.swift in Sources */,
+				9EE83E1B22A579200052B9FF /* Constant.swift in Sources */,
 				9E405DED22A4032A00DD4864 /* Response.swift in Sources */,
 				9EE83E1622A540660052B9FF /* SearchTableViewCell.swift in Sources */,
 			);
@@ -549,6 +567,7 @@
 /* Begin XCBuildConfiguration section */
 		9E405DD622A3FFF500DD4864 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE83E1922A578700052B9FF /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -610,6 +629,7 @@
 		};
 		9E405DD722A3FFF500DD4864 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE83E1922A578700052B9FF /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
