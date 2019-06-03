@@ -10,7 +10,6 @@
 		4205239D2007993F145965CC /* Pods_CERMATI_TESTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343E21161B2A43EAB22B711C /* Pods_CERMATI_TESTTests.framework */; };
 		64DF388B4FD4C7620E0920AC /* Pods_CERMATI_TESTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71648E24107BE7CB90455B4 /* Pods_CERMATI_TESTUITests.framework */; };
 		9E405DB122A3FFF300DD4864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DB022A3FFF300DD4864 /* AppDelegate.swift */; };
-		9E405DB322A3FFF300DD4864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DB222A3FFF300DD4864 /* ViewController.swift */; };
 		9E405DB622A3FFF300DD4864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E405DB422A3FFF300DD4864 /* Main.storyboard */; };
 		9E405DB922A3FFF300DD4864 /* CERMATI_TEST.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DB722A3FFF300DD4864 /* CERMATI_TEST.xcdatamodeld */; };
 		9E405DBB22A3FFF500DD4864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E405DBA22A3FFF500DD4864 /* Assets.xcassets */; };
@@ -23,6 +22,9 @@
 		9E405DFD22A404F500DD4864 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405DFC22A404F500DD4864 /* User.swift */; };
 		9E405E0322A40C2100DD4864 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405E0222A40C2100DD4864 /* Results.swift */; };
 		9E405E0922A4122200DD4864 /* RequestUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E405E0822A4122200DD4864 /* RequestUsers.swift */; };
+		9EE83E1122A53B2E0052B9FF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE83E1022A53B2E0052B9FF /* SearchViewController.swift */; };
+		9EE83E1622A540660052B9FF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE83E1422A540660052B9FF /* SearchTableViewCell.swift */; };
+		9EE83E1722A540660052B9FF /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EE83E1522A540660052B9FF /* SearchTableViewCell.xib */; };
 		F2D588CA07B01B3067640137 /* Pods_CERMATI_TEST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947659A1B80C9A7C8806FCEE /* Pods_CERMATI_TEST.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +55,6 @@
 		947659A1B80C9A7C8806FCEE /* Pods_CERMATI_TEST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CERMATI_TEST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E405DAD22A3FFF300DD4864 /* CERMATI_TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CERMATI_TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E405DB022A3FFF300DD4864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E405DB222A3FFF300DD4864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E405DB522A3FFF300DD4864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E405DB822A3FFF300DD4864 /* CERMATI_TEST.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CERMATI_TEST.xcdatamodel; sourceTree = "<group>"; };
 		9E405DBA22A3FFF500DD4864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +72,9 @@
 		9E405DFC22A404F500DD4864 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9E405E0222A40C2100DD4864 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		9E405E0822A4122200DD4864 /* RequestUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUsers.swift; sourceTree = "<group>"; };
+		9EE83E1022A53B2E0052B9FF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9EE83E1422A540660052B9FF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		9EE83E1522A540660052B9FF /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		C71648E24107BE7CB90455B4 /* Pods_CERMATI_TESTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CERMATI_TESTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E792FC937A2DCA1CDC06B459 /* Pods-CERMATI_TESTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CERMATI_TESTTests.debug.xcconfig"; path = "Target Support Files/Pods-CERMATI_TESTTests/Pods-CERMATI_TESTTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,11 +142,11 @@
 		9E405DAF22A3FFF300DD4864 /* CERMATI_TEST */ = {
 			isa = PBXGroup;
 			children = (
+				9EE83E1222A53B420052B9FF /* Storyboard */,
 				9E405DE322A4032A00DD4864 /* Network Abstraction */,
 				9E405DE222A402C300DD4864 /* Controller */,
 				9E405DE122A402BC00DD4864 /* Model */,
 				9E405DB022A3FFF300DD4864 /* AppDelegate.swift */,
-				9E405DB422A3FFF300DD4864 /* Main.storyboard */,
 				9E405DBA22A3FFF500DD4864 /* Assets.xcassets */,
 				9E405DBC22A3FFF500DD4864 /* LaunchScreen.storyboard */,
 				9E405DBF22A3FFF500DD4864 /* Info.plist */,
@@ -181,7 +185,8 @@
 		9E405DE222A402C300DD4864 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9E405DB222A3FFF300DD4864 /* ViewController.swift */,
+				9EE83E1322A540460052B9FF /* Search Cell */,
+				9EE83E1022A53B2E0052B9FF /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +216,23 @@
 				9E405E0822A4122200DD4864 /* RequestUsers.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		9EE83E1222A53B420052B9FF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9E405DB422A3FFF300DD4864 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9EE83E1322A540460052B9FF /* Search Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9EE83E1422A540660052B9FF /* SearchTableViewCell.swift */,
+				9EE83E1522A540660052B9FF /* SearchTableViewCell.xib */,
+			);
+			path = "Search Cell";
 			sourceTree = "<group>";
 		};
 		A0FB42A8782ABC50BFDCFD38 /* Pods */ = {
@@ -335,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E405DBE22A3FFF500DD4864 /* LaunchScreen.storyboard in Resources */,
+				9EE83E1722A540660052B9FF /* SearchTableViewCell.xib in Resources */,
 				9E405DBB22A3FFF500DD4864 /* Assets.xcassets in Resources */,
 				9E405DB622A3FFF300DD4864 /* Main.storyboard in Resources */,
 			);
@@ -458,15 +481,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE83E1122A53B2E0052B9FF /* SearchViewController.swift in Sources */,
 				9E405DB922A3FFF300DD4864 /* CERMATI_TEST.xcdatamodeld in Sources */,
 				9E405DEE22A4032A00DD4864 /* Request.swift in Sources */,
-				9E405DB322A3FFF300DD4864 /* ViewController.swift in Sources */,
 				9E405E0922A4122200DD4864 /* RequestUsers.swift in Sources */,
 				9E405DEC22A4032A00DD4864 /* SingleDataResponse.swift in Sources */,
 				9E405DFD22A404F500DD4864 /* User.swift in Sources */,
 				9E405E0322A40C2100DD4864 /* Results.swift in Sources */,
 				9E405DB122A3FFF300DD4864 /* AppDelegate.swift in Sources */,
 				9E405DED22A4032A00DD4864 /* Response.swift in Sources */,
+				9EE83E1622A540660052B9FF /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
